@@ -1,0 +1,58 @@
+
+.fullwidth{
+	width:100%;
+}
+.nomargin {
+	margin-bottom: 0px !important;
+}
+
+#frontpage:hover {
+	border:1px solid pink;
+	opacity: 1;
+}
+.header-text {
+    font-family: 'Oswald', sans-serif;
+    position: absolute;
+    top: 30vh;
+    width: 96vw;
+    font-size: 5vw;
+    color: #fff;
+    z-index: 2;
+    letter-spacing: 1em;
+    word-spacing: 0.1em !important;
+    line-height: 80%;
+    opacity: 0;
+    padding-left: 10vw;
+}
+
+/*header--------*/
+header{
+	text-align:center;
+}
+/*----------header*/
+
+/*footer-----------*/
+footer{	
+	text-align: center ;
+	float: none ; 	
+	font-family: 'Playfair Display', serif ;
+	font-size: 1.25em ;
+}
+
+.footer_social { 
+	padding: 10px 0px 10px; 
+	text-align: center; 	
+}
+
+.footer_social img { float: none; margin: 0 6px; }
+
+footer a{
+	color:#000 ; 	
+	font-weight: normal !important;
+}
+
+div a .mailto{
+	margin-bottom: : 20px !important; 
+	
+}
+/*---------footer*/

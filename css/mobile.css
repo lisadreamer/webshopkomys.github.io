@@ -1,0 +1,202 @@
+body {
+	background-color: #000000;   
+	font-family: "verdana";
+	
+}
+
+footer {
+	text-align:center;
+	font-size:1em;
+	font-family: "verdana";} 
+	
+.white {
+	background-color: #ffffff;
+	width: 75%;
+	margin: auto;
+	border: 2px solid grey ;
+	/*margin: 0px 12%;*/}
+	
+.white2 {
+	background-color: #B4A9BB;
+	width: 15%;
+	padding : 20px;
+	margin: auto;
+	/*margin: 0px 42%;*/
+	}
+	
+#small-menu select {
+    font-size:2em;
+    color:#000000;
+    margin-top:10px;
+    border:solid 5px #B4A9BB;
+	width: 90%;}
+	
+#big-menu  {display:none}		
+
+/*main upper menu*/
+
+header{text-align: center;}
+
+nav ul li{
+	display: inline;
+	}
+
+nav ul li a{
+    background-color: #000000;
+	color: #ffffff;
+    padding: 10px 20px ; 
+	text-decoration:none;
+	border-radius:4px 4px;
+	vertical-align: 30px;
+	}
+	
+nav ul li a:hover{background-color: #B4A9BB
+}
+/*main upper menu end*/
+
+/*side menu*/
+aside {    	
+    text-align: center;	
+	margin-right: 40px;
+}
+
+ul.catalog li.head {
+    background-color: #B4A9BB;
+    
+    }
+
+ul.catalog li.head:hover {
+    color: #ffffff;}	
+	
+ul.catalog li{
+    background-color: #ffffff;
+	/*border: 1px solid #B4A9BB;*/
+	list-style-type:none;
+    line-height: 45px;
+	padding: 5px 5px 5px 5px;
+	border-radius:8px 8px 8px 8px;
+	margin:5px;
+	}
+	
+ul.catalog li a{
+	color: #000000; 
+	text-decoration:none;
+	}
+
+ul.catalog li a:hover{color: #B4A9BB;	
+	}
+
+#panel, #flip, #panel2,#panel3,#panel4 {       
+	font-size: 20px;
+}
+/*side menu end*/
+
+main {text-align: center;
+}	
+
+	
+main.products {
+	margin-top: 0px;
+	border: 10px solid #B4A9BB ;
+	width: 90%;
+	margin-left:1%;
+	text-align: center;
+	/*background-color: #000000;*/
+}
+	
+main div.earrings {
+	display: inline-block;	
+    margin: 15px;
+    padding: 10px;
+    width: 80%;
+    border: 2px solid black;
+} 
+
+main div.bracelet {
+	display: inline-block;
+	/*background-color: #ffffff;*/
+    margin: 5px;
+    padding: 15px;
+    width: 80%;
+    /*height: 1030px;*/
+    border: 2px solid black;	
+} 
+
+.mainpic{
+	width: 80%;}
+
+#googlemap  {width:100%;
+            height: 300px;    			
+            border:solid 2px rgb(204,204,204);}
+			  
+	
+img.logo{
+	width: 270px;
+	}
+
+h1 { color: #B4A9BB;
+    text-align: center;
+}
+
+p {	text-align: center;
+    font-family: "times"; 
+    font-size: 20px;
+}
+
+div.lookbook {
+	text-align: center;
+	width: 50%;
+	padding: 40px;
+	border: 20px solid #B4A9BB ;
+	margin: auto;	
+	}
+	
+img.lookbookimg{
+	width: 100%;}	
+	
+main.contact{	
+	text-align: center;
+	border: 15px solid #B4A9BB ;
+	width: 92%;
+}	
+	
+div.contacts{
+	padding: 20px;
+	}	
+
+.delivery{	
+	width: 40%;}	
+	
+table, td , th{
+	border:1px solid;
+	
+	text-align: center;
+    background-color: #B4A9BB;
+}
+
+table {width: 100%;
+	/*margin: 0% 20%;*/}
+	
+div.text {	
+	margin: 0px 40px;}	
+	
+p.text {
+	background-color: #ffffff;
+	width: 25%;	
+	margin: 0px 37%;}	
+	
+.textWA{
+	text-align:center;
+	font-size:1.0em;
+	font-family: "verdana";}
+	
+.earringsimg{
+	width: 100%;}	
+	
+.ringsimg{
+	width: 65%;}	
+	
+.footerWA{
+	text-align:center;
+	font-size:1.0em;
+	font-family: "verdana";}	

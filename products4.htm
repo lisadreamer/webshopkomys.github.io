@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>HKomys - My first page</title>
+
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="try to remember HTML" />
+<meta name="robots" content="index, nofollow" />
+<meta name="author" content="a1504523@myy.haaga-helia.fi" />
+<meta name="copyright" content="Copyright by me 2015" />
+<meta name="keywords" content="learning HTML5, CSS" />
+<!--<link rel="stylesheet" href="css/firstcss.css" type="text/css" />-->
+<link href="css/mobile.css"
+rel="stylesheet" type="text/css"
+media="only screen and (min-width: 0px)
+and (max-width: 480px)" >
+
+<link href="css/tablet.css"
+rel="stylesheet" type="text/css"
+media="only screen and (min-width: 481px)
+and (max-width: 768px)" >
+
+<link href="css/pc.css"
+rel="stylesheet" type="text/css"
+media="only screen and (min-width: 769px)" >
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+    $("#flip").click(function(){
+        $("#panel").slideToggle("slow");
+		$("#panel2").slideToggle("slow");
+		$("#panel3").slideToggle("slow");
+		$("#panel4").slideToggle("slow");
+    });
+});
+</script>
+</head>
+
+<body>
+
+<header>
+<a href= "index.htm"><img src="images/logo4.png" alt="HKomys" class="logo"/></a>
+
+<nav id="small-menu">
+<form style="text-align:center; ">
+	<select name="URL" onChange="window.location.href=this.value">
+	
+<option value="index.htm">Home</option>
+<option selected="selected" value="products.htm">Jewellery</option>
+<option value="shipping.htm">Delivery</option>
+<option value="lookbook.htm">lookbook</option>
+<option value="contacts.htm">Contacts</option>
+	</select>
+</form>
+</nav>
+
+<nav id="big-menu">
+	<ul>
+		<li><a href="index.htm">Home</a>
+		<li><a href="products.htm">Jewellery</a>
+		<!--<li><a href="bag.htm">My bag</a>-->
+		<li><a href="shipping.htm">Delivery</a>
+		<li><a href="lookbook.htm">lookbook</a>
+		<li><a href="contacts.htm">Contacts</a>
+	</ul>
+</nav>
+</header>
+<hr>
+<aside>
+<ul class="catalog " style="list-style-type:none">
+	<li id="flip" class="head">
+		<a href="products.htm">
+			<span><b>Jewellery</b></span>
+		</a>
+	</li>
+	
+	<li id="panel">
+		<a href="products1.htm">
+			<span>earrings</span>
+		</a>
+	</li>
+	
+	<li id="panel2">
+		<a href="products2.htm">
+			<span>rings</span>
+		</a>
+	</li>
+	
+	<li id="panel3">
+		<a href="products3.htm">
+			<span>pendant</span>
+		</a>
+	</li>
+	
+	<li id="panel4">
+		<a href="products4.htm">
+			<span>bracelet</span>
+		</a>
+	</li>
+</ul>	
+</aside>
+<main class="products">
+<h2 style="text-align:center;color:#B4A9BB;">bracelets</h2>
+
+<div class="bracelet">
+<img src="images/bracelet1.JPG" alt="picture of bracelet" class="earringsimg"/><br>
+<img src="images/bracelet2.jpg" alt="picture of bracelet" class="earringsimg"/>
+<p class="textWA">silver, 8.31gr.<br>49€</p>
+</div>
+
+</main>
+<br><br><br>
+<footer class="footerWA"> <!--class="white2">-->
+
+Tel. 041-367-1290<br>
+Tel. +7924-597-1529<br>
+hkomys@gmail.com<br>
+00410 Helsinki
+
+</footer>
+</body>
+</html>
