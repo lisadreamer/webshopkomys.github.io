@@ -5,6 +5,9 @@
 .halfwidth{
 	width:50%;
 }
+.widthshipping{
+    width:100px;    
+}
 .nomargin {
 	margin-bottom: 0px !important;
 }
@@ -40,9 +43,7 @@
     align-self: center !important;
 }
 
-.marginleft{
-    margin-left: 20%;
-}
+
 
 
 /*header--------*/
@@ -79,23 +80,14 @@ div a .mailto{
 
 /*side menu*/
 .jtype{
-    background-color: #E7E7E7 !important;
-    
+    background-color: #E7E7E7 !important;    
 }
 .jewellery li:hover{
     background-color: #F8F8F8 !important;   
 }
 .jewellery li{
  text-align: center;
-
 }
-
-/*
-#panel,#panel2,#panel3,#panel4 :hover{    
-	background-color: white;
-    
-}	*/
-
 
 /*side menu end*/
 
@@ -105,7 +97,86 @@ div a .mailto{
 	
 }
 
-#personalinfo {
-    text-align: center;
+/*personal information*/
+.contact_form label {
+	    width:150px;
+	    margin:5px 0px 5px 0px;
+	    display:inline-block;
+	    float:left;
+	    padding:5px;
+	}
+.contact_form input {
+
+    padding:5px 8px;
+    margin:3px 0px 3px 0px;
+}
+
+.contact_form select {
+
+    padding:5px 8px;
+    margin:3px 0px 3px 0px;
+}
+
+#colorChooser {
+
+    padding:5px 8px;
+    margin:8px 0px 8px 0px;
+}
+
+#country2{
+    width:189px;
+}
+
+#db{
+    width:189px;
+}
+
+#genders {
+    width:auto;
+    border:none;
+    margin-left: 100px;
+}
+
+#genders input {
+    width:20px;
+    float:left;
+    margin: 0 10px 0 40px;
     
 }
+
+#genders label {
+    width:auto;
+    margin:auto;
+    padding: 0px 0px 10px 0px;
+    float:left;    
+}
+
+input:invalid {
+    background-color: pink;
+    
+}
+input:hover {
+  border-color: silver;  
+}
+
+.form_hint {
+	background: #d45252;
+	border-radius: 3px 3px 3px 3px;
+	color: white;
+	margin-left:8px;
+	padding: 1px 6px;
+	z-index: 999; /* hints stay above all other elements */
+	position: absolute; /* allows proper formatting if hint is two lines */
+	display: none;
+	}
+
+.form_hint::before {
+	content: "\25C0"; /* left point triangle in escaped unicode */
+	color:#d45252;
+	position: absolute;
+	top:1px;
+	left:-6px;
+	}
+
+.contact_form input:focus + .form_hint {display: inline;}
+/*personal information end*/

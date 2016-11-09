@@ -17,6 +17,8 @@
     <link href="css/bootstrap.css" rel="stylesheet"> 
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+    
+    <script type= "text/javascript" src = "countries.js"></script>
 </head>
 
 <body>
@@ -41,7 +43,7 @@
     
 <main>
 
-<section id="personalinfo">    
+<form class="contact_form" action="" method="post" name="contact_form">    
 
     <fieldset id="fieldset" class="marginleft">
         <legend id="legend1" class="nomargin">Personal information</legend>
@@ -80,10 +82,15 @@
         
         <br>
                 
-        <label for="pw">Password:*</label>
-        <input type="password" id="pw" required name="pw" 
-               title="Must contain at least one number and one uppercase and lowercase letter (min 8 characters)"
-               pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+        <label for="pw1">Password:*</label>
+        <input type="password" id="pw1" required name="pw1"                
+               pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" oninput="checkPasswords()">
+            <span class="form_hint">Must contain at least one number and one uppercase and lowercase letter (min 8 characters)</span>
+        <br>
+            
+        <label for="pw2">Repeat password:*</label>
+        <input type="password" id="pw2" required name="pw2"               
+               pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" oninput="checkPasswords()">
             
         </section>
         
@@ -92,13 +99,14 @@
         <section>
             
         <p>Address:</p>    
+            
             <label for="country2">Country:</label>          
             <select id="country2" name ="country2"></select>
             <script language="javascript">
             populateCountries("country2");
             </script>
             
-            <br>
+            <br><br>
             
             <label for="city">City:</label>
             <input type="text" id="city" name="city">
@@ -113,7 +121,7 @@
             <label for="post">Postal code:</label>
             <input type="text" id="post" name="post">
             
-            <br><br>
+            <br>
             
             <label for="mobile">Phone:</label>
             <input type="tel" id="mobile" placeholder="+(111)123456789"
@@ -139,7 +147,7 @@
         
         <br>
     </fieldset>
-    </section>
+    </form>
 </main>
 
 <footer>
@@ -159,32 +167,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
-
-    <!--move this script to js-->
-    <script>
-    var colorInputField = document.querySelector("#colorChooser");
     
-    colorInputField.addEventListener('input', function(evt) {      
-        document.body.style.backgroundColor = this.value;
-      }, false);
-    </script>
+    <script src="1.js"></script>
     
-    <script>
-    //window.onload = function(){ 
-        
-        var field = document.getElementById("db");
-     
-        field.oninput = function(evt) {
-            var date = this.value;
-            if(this.valueAsDate <= new Date()) {
-                 console.log("birthdate is past");
-            } else {
-                console.log("birthdate in future");
-                field.style.backgroundColor= "lightpink";
-            }
-        }
-   // };
-    </script>
+    
 </body>
 </html>
 

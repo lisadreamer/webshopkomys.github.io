@@ -1,136 +1,119 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>HKomys - My first page</title>
+    <title>WebShopKomys</title>
 
-<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="description" content="try to remember HTML" />
-<meta name="robots" content="index, nofollow" />
-<meta name="author" content="a1504523@myy.haaga-helia.fi" />
-<meta name="copyright" content="Copyright by me 2015" />
-<meta name="keywords" content="learning HTML5, CSS" />
-<!--<link rel="stylesheet" href="css/firstcss.css" type="text/css" />-->
-<link href="css/mobile.css"
-rel="stylesheet" type="text/css"
-media="only screen and (min-width: 0px)
-and (max-width: 480px)" >
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <meta name="description" content="WebShopProject -Komys-" />
+    <meta name="author" content="a1504523@myy.haaga-helia.fi" />
+    <meta name="copyright" content="Copyright by Elizaveta 2016" />
 
-<link href="css/tablet.css"
-rel="stylesheet" type="text/css"
-media="only screen and (min-width: 481px)
-and (max-width: 768px)" >
+    <link rel="stylesheet" href="css/mycss.css">    
+      
 
-<link href="css/pc.css"
-rel="stylesheet" type="text/css"
-media="only screen and (min-width: 769px)" >
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script> 
-$(document).ready(function(){
-    $("#flip").click(function(){
-        $("#panel").slideToggle("slow");
-		$("#panel2").slideToggle("slow");
-		$("#panel3").slideToggle("slow");
-		$("#panel4").slideToggle("slow");
+    <link href="css/bootstrap.css" rel="stylesheet"> 
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+    
+    <!--
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script> 
+    $(document).ready(function(){
+        $("#flip").click(function(){
+            $("#panel").slideToggle("slow");
+            $("#panel2").slideToggle("slow");
+            $("#panel3").slideToggle("slow");
+            $("#panel4").slideToggle("slow");
+            $('#flip').css({'border-radius' : '5px 5px 5px 5px'});
+            
+           
+        });
     });
-});
-</script>
+    </script>-->
+   
+
 </head>
 
 <body>
+    
+<nav class="navbar nomargin navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="index.html">Kömys</a>
+        </div>
+    <ul class="nav navbar-nav">
+      <li><a href="index.html">Home</a></li>
+      <li class="active"><a href="products.html">Jewellery</a></li>
+      <li><a href="lookbook.html">Lookbook</a></li>
+      <li><a href="shipping.html">Delivery</a></li>
+      <li><a href="contacts.html">Contacts</a></li>      
+      <li><a href="#more">More</a></li>
+      <li><a href="personalinfo.html">Register / Login</a></li>
+      
+    </ul>
+    </div>
+</nav> 
 
-<header>
-<a href= "index.htm"><img src="images/logo4.png" alt="HKomys" class="logo"/></a>
-
-<nav id="small-menu">
-<form style="text-align:center; ">
-	<select name="URL" onChange="window.location.href=this.value">
-	
-<option value="index.htm">Home</option>
-<option selected="selected" value="products.htm">Jewellery</option>
-<option value="shipping.htm">Delivery</option>
-<option value="lookbook.htm">lookbook</option>
-<option value="contacts.htm">Contacts</option>
-	</select>
-</form>
-</nav>
-
-<nav id="big-menu">
-	<ul>
-		<li><a href="index.htm">Home</a>
-		<li><a href="products.htm">Jewellery</a>
-		<!--<li><a href="bag.htm">My bag</a>-->
-		<li><a href="shipping.htm">Delivery</a>
-		<li><a href="lookbook.htm">lookbook</a>
-		<li><a href="contacts.htm">Contacts</a>
-	</ul>
-</nav>
-</header>
-<hr>
-<aside>
-<ul class="catalog " style="list-style-type:none">
-	<li id="flip" class="head">
-		<a href="products.htm">
-			<span><b>Jewellery</b></span>
-		</a>
-	</li>
-	
-	<li id="panel">
-		<a href="products1.htm">
-			<span>earrings</span>
-		</a>
-	</li>
-	
-	<li id="panel2">
-		<a href="products2.htm">
-			<span>rings</span>
-		</a>
-	</li>
-	
-	<li id="panel3">
-		<a href="products3.htm">
-			<span>pendant</span>
-		</a>
-	</li>
-	
-	<li id="panel4">
-		<a href="products4.htm">
-			<span>bracelet</span>
-		</a>
-	</li>
-</ul>	
-</aside>
+<nav class="navbar nomargin navbar-default jtype">
+    <div >
+        
+    <ul class="nav navbar-nav jewellery">
+      <!--<li id="aflip"><a href="products.html">Jewellery</a></li>-->
+      <li id="panel"><a href="products1.html">earrings</a></li>
+      <li class="active" id="panel2"><a href="products2.html">rings</a></li>
+      <li id="panel3"><a href="products3.html">pendant</a></li>
+      <li id="panel4"><a href="products4.html">bracelet</a></li>      
+            
+    </ul>
+    </div>
+</nav> 
+    
 <main class="products">
-<h2 style="text-align:center;color:#B4A9BB;">Rings</h2>
-
-<div class="earrings">
-<img src="images/ring1.jpg" alt="picture of rings" class="ringsimg"/>
-<p class="textWA">silver, 5.46gr.<br>29€</p>
-</div>
-<div class="earrings">
-<img src="images/ring2.jpg" alt="picture of rings" class="ringsimg"/>
-<p class="textWA">silver, 3.88gr.<br>19€</p>
-</div>
-<div class="earrings">
-<img src="images/ring3.jpg" alt="picture of rings" class="ringsimg"/>
-<p class="textWA">silver, 4.72gr.<br>25€</p>
-</div>
-<div class="earrings">
-<img src="images/ring4.JPG" alt="picture of rings" class="earringsimg"/>
-<p class="textWA">silver, 3.01gr.<br>25€</p>
-</div>
-
+<!--<h2 style="text-align:center;color:#B4A9BB;">Catalog</h2>-->
+<div class="container-fluid">
+    <div class="row">
+        
+        <div class= "col-lg-3 col-md-4 col-sm-6 col-xs-12">
+        <img src="images/ring1.jpg" alt="picture of rings" class="ringsimg"/>
+        <p class="textWA">silver, 5.46gr.<br>29€</p>
+        </div>
+        <div class= "col-lg-3 col-md-4 col-sm-6 col-xs-12">
+        <img src="images/ring2.jpg" alt="picture of rings" class="ringsimg"/>
+        <p class="textWA">silver, 3.88gr.<br>19€</p>
+        </div>
+        <div class= "col-lg-3 col-md-4 col-sm-6 col-xs-12">
+        <img src="images/ring3.jpg" alt="picture of rings" class="ringsimg" />
+        <p class="textWA">silver, 4.72gr.<br>25€</p>
+        </div>
+        <div class= "col-lg-3 col-md-4 col-sm-6 col-xs-12">
+        <img src="images/ring4.JPG" alt="picture of rings" class="earringsimg"/>
+        <p class="textWA">silver, 3.01gr.<br>25€</p>
+        </div>
+        
+    </div>
 </div>
 </main>
 <br><br><br>
-<footer class="footerWA"> <!--class="white2">-->
+<footer>
 
-Tel. 041-367-1290<br>
-Tel. +7924-597-1529<br>
-hkomys@gmail.com<br>
-00410 Helsinki
+    <div class="footer_social">
+        <h3>Follow Us</h3>
+        <a href="#" target="_blank" title="Kömys on Facebook"><img src="images/facebook-icon.png" alt="Kömys on Facebook"/></a>
+        <a href="#" target="_blank" title="Kömys on Twitter"><img src="images/twitter-icon.png" atl="Closed Clique on Twitter"/></a>
+        <a href="#" target="_blank" title="Kömys on Picasa"><img src="images/picasa-icon.png" alt="Kömys on Picasa" /></a>
+        <a href="#" target="_blank" title="Kömys on Youtube"><img src="images/youtube-icon.png" alt="Kömys on Youtube" /></a>
+    </div><!--//footer_social-->
+    
 
 </footer>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
 </body>
 </html>
