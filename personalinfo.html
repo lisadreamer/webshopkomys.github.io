@@ -1,63 +1,50 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <title>WebShopKomys</title>
-    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
     <meta name="description" content="WebShopProject -Komys-" />
     <meta name="author" content="a1504523@myy.haaga-helia.fi" />
-    <meta name="copyright" content="Copyright by Elizaveta & Ekaterina 2016" />
+    <meta name="copyright" content="Copyright by Elizaveta 2016" />
 
-    <!--<link rel="stylesheet" href="css/firstcss.css" type="text/css" />360 769-->
+    <link rel="stylesheet" href="css/mycss.css">    
+      
 
-    <link href="css/mobile.css"
-    rel="stylesheet" type="text/css"
-    media="only screen and (min-width: 0px)
-    and (max-width: 480px)" >
-
-    <link href="css/pc.css"
-    rel="stylesheet" type="text/css"
-    media="only screen and (min-width: 481px)" >
-    
-    <script type= "text/javascript" src = "countries.js"></script>
-    
+    <link href="css/bootstrap.css" rel="stylesheet"> 
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
 </head>
 
 <body>
-    <header>
-        <a href= "index.htm"><img src="images/logo4.png" alt="HKomys" class="logo"/></a>
-
-        <nav id="small-menu">
-            <form style="text-align:center; ">
-	            <select name="URL" onChange="window.location.href=this.value">
-	
-                <option selected="selected" value="index.htm">Home</option>
-                <option value="products.htm">Jewellery</option>
-                <option value="shipping.htm">Delivery</option>
-                <option value="lookbook.htm">lookbook</option>
-                <option value="contacts.htm">Contacts</option>
-	            </select>
-            </form>
-        </nav>
-
-        <nav id="big-menu">
-	        <ul>
-		        <li><a href="index.htm">Home</a>
-		        <li><a href="products.htm">Jewellery</a>
-		        <li><a href="shipping.htm">Delivery</a>
-		        <li><a href="lookbook.htm">lookbook</a>
-		        <li><a href="contacts.htm">Contacts</a>
-	        </ul>
-        </nav>
-    </header>   
-<hr><br><br>   
     
-<main class="white">
+<nav class="navbar nomargin navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="index.html">Kömys</a>
+        </div>
+    <ul class="nav navbar-nav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="products.html">Jewellery</a></li>
+      <li><a href="lookbook.html">Lookbook</a></li>
+      <li><a href="shipping.html">Delivery</a></li>
+      <li><a href="contacts.html">Contacts</a></li>      
+      <li><a href="#more">More</a></li>
+      <li class="active"><a href="personalinfo.html">Register / Login</a></li>
+      
+    </ul>
+    </div>
+</nav> 
+    
+<main>
 
-    <h1></h1>
+<section id="personalinfo">    
 
-    <fieldset id="fieldset">
-        <legend id="legend1">Personal information</legend>
+    <fieldset id="fieldset" class="marginleft">
+        <legend id="legend1" class="nomargin">Personal information</legend>
         
         <section>
             
@@ -152,39 +139,37 @@
         
         <br>
     </fieldset>
-    
+    </section>
 </main>
 
 <footer>
-    <p style="font-size:18px">
-        Tel. 041-367-1290<br>
-        Tel. +7924-597-1529<br>
-        hkomys@gmail.com<br>
-        00410 Helsinki
-    </p>
 
-    <!--validators links-->
-    <p>
-        <a href="http://validator.w3.org/check?uri=referer">
-            <img src="http://www.w3.org/Icons/valid-html32" alt="validator image" height="31" width="88">
-        </a>
-        <a href="http://jigsaw.w3.org/css-validator/check/referer">
-            <img style="border:0;width:88px;height:31px"
-                    src="http://jigsaw.w3.org/css-validator/images/vcss"
-                    alt="Valid CSS!" />
-        </a>
-    </p>
+    <div class="footer_social">
+        <h3>Follow Us</h3>
+        <a href="#" target="_blank" title="Kömys on Facebook"><img src="images/facebook-icon.png" alt="Kömys on Facebook"/></a>
+        <a href="#" target="_blank" title="Kömys on Twitter"><img src="images/twitter-icon.png" atl="Closed Clique on Twitter"/></a>
+        <a href="#" target="_blank" title="Kömys on Picasa"><img src="images/picasa-icon.png" alt="Kömys on Picasa" /></a>
+        <a href="#" target="_blank" title="Kömys on Youtube"><img src="images/youtube-icon.png" alt="Kömys on Youtube" /></a>
+    </div><!--//footer_social-->
+    
+
 </footer>
 
-<script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!--move this script to js-->
+    <script>
     var colorInputField = document.querySelector("#colorChooser");
     
     colorInputField.addEventListener('input', function(evt) {      
         document.body.style.backgroundColor = this.value;
       }, false);
-</script>
+    </script>
     
- <script>
+    <script>
     //window.onload = function(){ 
         
         var field = document.getElementById("db");
@@ -199,7 +184,9 @@
             }
         }
    // };
-    </script>    
-    
+    </script>
 </body>
 </html>
+
+    
+    

@@ -2,8 +2,17 @@
 .fullwidth{
 	width:100%;
 }
+.halfwidth{
+	width:50%;
+}
 .nomargin {
 	margin-bottom: 0px !important;
+}
+.topmargin{
+    margin-top: 30px;    
+}
+.center{
+    text-align: center;
 }
 
 #frontpage:hover {
@@ -24,6 +33,17 @@
     opacity: 0;
     padding-left: 10vw;
 }
+
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display'); 
+.lookbookimg {
+    margin:30px 0px 30px 0px;
+    align-self: center !important;
+}
+
+.marginleft{
+    margin-left: 20%;
+}
+
 
 /*header--------*/
 header{
@@ -56,3 +76,36 @@ div a .mailto{
 	
 }
 /*---------footer*/
+
+/*side menu*/
+.jtype{
+    background-color: #E7E7E7 !important;
+    
+}
+.jewellery li:hover{
+    background-color: #F8F8F8 !important;   
+}
+.jewellery li{
+ text-align: center;
+
+}
+
+/*
+#panel,#panel2,#panel3,#panel4 :hover{    
+	background-color: white;
+    
+}	*/
+
+
+/*side menu end*/
+
+.products img {
+	
+	margin-top: 10px;
+	
+}
+
+#personalinfo {
+    text-align: center;
+    
+}
