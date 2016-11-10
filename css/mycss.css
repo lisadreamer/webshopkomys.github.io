@@ -14,6 +14,9 @@
 .topmargin{
     margin-top: 30px;    
 }
+.toppadding{
+	padding-top: 30px;
+}
 .center{
     text-align: center;
 }
@@ -37,7 +40,7 @@
     padding-left: 10vw;
 }
 
-@import url('https://fonts.googleapis.com/css?family=Playfair+Display'); 
+
 .lookbookimg {
     margin:30px 0px 30px 0px;
     align-self: center !important;
@@ -105,8 +108,10 @@ div a .mailto{
 	    float:left;
 	    padding:5px;
 	}
-.contact_form input {
 
+.contact_form input {
+	width:200px;
+	border: 2px solid #E7E7E7;
     padding:5px 8px;
     margin:3px 0px 3px 0px;
 }
@@ -124,11 +129,11 @@ div a .mailto{
 }
 
 #country2{
-    width:189px;
+    width:200px;
 }
 
 #db{
-    width:189px;
+    
 }
 
 #genders {
