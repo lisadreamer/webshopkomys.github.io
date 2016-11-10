@@ -122,6 +122,14 @@ div a .mailto{
     margin:3px 0px 3px 0px;
 }
 
+.contact_form input:required {
+   background:url('http://i.imgur.com/7pIN7wz.png') no-repeat right top;
+}
+
+.contact_form input:required:valid {
+   background:url('http://i.imgur.com/BJolppS.png') no-repeat right top;
+}
+
 #colorChooser {
 
     padding:5px 8px;

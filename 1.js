@@ -14,7 +14,8 @@ checkPasswords();
 
 var colorInputField = document.querySelector("#colorChooser");
     
-    colorInputField.addEventListener('input', function(evt) {      
+    colorInputField.addEventListener('input', function(evt) {
+        console.log("123");      
         document.body.style.backgroundColor = this.value;
       }, false);
 
@@ -33,7 +34,10 @@ var colorInputField = document.querySelector("#colorChooser");
             }
         }
    // };
-        
+/*       
+jQuery(document).ready( 
+   
+);*/
 /*jQuery(document).ready(function($){
  // Defining a function to set size for #hero 
     function fullscreen(){
